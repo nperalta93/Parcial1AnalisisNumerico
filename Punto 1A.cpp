@@ -13,7 +13,7 @@ using namespace std;
 int main (){
   unsigned time0, time1;
 
-  
+  //1.A.
   //Se prueba con siete matrices distintas en tamaño de forma incremental
   for (int n=3; n<=10; n++){
       time0=clock();
@@ -33,6 +33,7 @@ int main (){
 	        }
 	    }  
 	  //Se imprimen resultados, tanto del programa como de su rendimiento.
+      //1.B.
       cout<<"Suma elementos matriz triangular superior: "<<suma<<endl;
       time1=clock();
       double t_exe=(double (time1-time0)/CLOCKS_PER_SEC);
@@ -44,3 +45,8 @@ int main (){
 	    }
     }
 }
+
+/*
+1.C
+La complejidad del programa encargado del estudio de la eficiencia de la función, es de la orden o(n^2), debido a los ciclos 
+anidados presentes en la consecución de los tiempos de rendimiento*/
